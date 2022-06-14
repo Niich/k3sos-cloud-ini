@@ -1,6 +1,8 @@
 ssh_authorized_keys:
 - github:Niich
 hostname: k3n01
+boot_cmd:
+  - "ln -s /etc/init.d/nfsclient /etc/runlevels/default"
 
 k3os:
   data_sources:
