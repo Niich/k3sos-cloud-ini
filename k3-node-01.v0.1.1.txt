@@ -1,0 +1,17 @@
+ssh_authorized_keys:
+- github:Niich
+hostname: k3n01
+
+k3os:
+  data_sources:
+  - aws
+  - cdrom
+  modules:
+  - kvm
+  - nvme
+  - nfs
+  k3s_args:
+    - server
+  ntp_servers:
+  - 0.us.pool.ntp.org
+  - 1.us.pool.ntp.org
