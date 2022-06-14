@@ -2,7 +2,8 @@ ssh_authorized_keys:
 - github:Niich
 hostname: k3n01
 boot_cmd:
-  - "ln -s /etc/init.d/nfsclient /etc/runlevels/default"
+  - rc-update add rpc.statd
+  - rc-update add nfs
 
 k3os:
   data_sources:
